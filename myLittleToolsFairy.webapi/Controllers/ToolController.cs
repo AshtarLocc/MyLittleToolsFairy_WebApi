@@ -19,7 +19,7 @@ namespace myLittleToolsFairy.webapi.Controllers
             _sqlSugarClient = sqlSugarClient;
         }
 
-        [HttpGet("/code-first")]
+        [HttpGet("/api/tool/code-first")]
         public string CodeFirst()
         {
             try
@@ -100,7 +100,7 @@ namespace myLittleToolsFairy.webapi.Controllers
             }
         }
 
-        [HttpGet("/tree-menus")]
+        [HttpGet("/api/tool/tree-menus")]
         public List<TreeMenuDTO> GetTreeMenus()
         {
             // 查詢Menu資料表中的內容，並且將其重組為TreeMenu的格式回傳
@@ -117,10 +117,25 @@ namespace myLittleToolsFairy.webapi.Controllers
             // ToTree是 SqlSugar 終將平面結構組織為樹狀結構(嵌套)的方法，ToTree(it => it.Children, it => it.ParentId, 0)中，it.Children是一個TreeMenu內部定義的TreeMenu結構的List，是所有子節點依循的的model結構，而it => it.ParentId則代表指定了Menu中的ParentId為父節點，最後設置的0是代表根節點的值，通常根結點會設置為0，代表該筆資料沒有父級物件
         }
 
-        [HttpGet("/menus")]
+        [HttpGet("/api/tool/menus")]
         public List<Menu> GetMenus()
         {
             return _sqlSugarClient.Queryable<Menu>().ToList();
+        }
+
+        [HttpGet("/api/tool/user-id")]
+        public long GetUserId(string userName, string userPassword)
+        {
+            if (string.IsNullOrEmpty(userName) || string.IsNullOrEmpty(userPassword))
+            {
+                return 0;
+            }
+            var info = _sqlSugarClient.Queryable<User>().Where(p => p.Name == userName && p.Password == userPassword).First();
+            if (info == null)
+            {
+                return 0;
+            }
+            return info.Id;
         }
     }
 }
