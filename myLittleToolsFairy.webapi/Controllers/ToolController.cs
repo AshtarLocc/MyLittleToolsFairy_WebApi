@@ -137,5 +137,16 @@ namespace myLittleToolsFairy.webapi.Controllers
             }
             return info.Id;
         }
+
+        [HttpGet("/api/tool/users")]
+        public List<User> GetUsers()
+        {
+            var data = _sqlSugarClient.Queryable<User>().ToList();
+            if (data == null)
+            {
+                return new List<User> { };
+            }
+            return data;
+        }
     }
 }
