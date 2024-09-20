@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>myLittleToolsFairy.webapi</name>
+    </assembly>
+    <members>
+        <member name="M:myLittleToolsFairy.webapi.Controllers.ToolController.CodeFirst">
+            <summary>
+            CodeFirst產生測試資料
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:myLittleToolsFairy.webapi.Controllers.ToolController.GetTreeMenus">
+            <summary>
+            樹狀菜單列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:myLittleToolsFairy.webapi.Controllers.ToolController.GetMenus">
+            <summary>
+            原始菜單列表(無樹狀)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:myLittleToolsFairy.webapi.Controllers.ToolController.GetUserId(System.String,System.String)">
+            <summary>
+            登入以取得userID
+            </summary>
+            <param name="userName"></param>
+            <param name="userPassword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:myLittleToolsFairy.webapi.Controllers.ToolController.GetUsers">
+            <summary>
+            Get所有Users
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

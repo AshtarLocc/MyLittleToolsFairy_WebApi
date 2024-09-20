@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using myLittleToolsFairy.webapi.Model.DB;
 using myLittleToolsFairy.webapi.Model.DTO;
+using myLittleToolsFairy.webcore.SwaggerExtend;
 using SqlSugar;
 using System.Reflection;
 
@@ -8,6 +9,7 @@ namespace myLittleToolsFairy.webapi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [ApiExplorerSettings(IgnoreApi = false, GroupName = nameof(ApiVersions.v1))]
     public class ToolController : ControllerBase
     {
         private readonly ILogger<ToolController> _logger;
@@ -19,6 +21,10 @@ namespace myLittleToolsFairy.webapi.Controllers
             _sqlSugarClient = sqlSugarClient;
         }
 
+        /// <summary>
+        /// CodeFirst產生測試資料
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("/api/tool/code-first")]
         public string CodeFirst()
         {
@@ -100,6 +106,10 @@ namespace myLittleToolsFairy.webapi.Controllers
             }
         }
 
+        /// <summary>
+        /// 樹狀菜單列表
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("/api/tool/tree-menus")]
         public List<TreeMenuDTO> GetTreeMenus()
         {
@@ -117,12 +127,22 @@ namespace myLittleToolsFairy.webapi.Controllers
             // ToTree是 SqlSugar 終將平面結構組織為樹狀結構(嵌套)的方法，ToTree(it => it.Children, it => it.ParentId, 0)中，it.Children是一個TreeMenu內部定義的TreeMenu結構的List，是所有子節點依循的的model結構，而it => it.ParentId則代表指定了Menu中的ParentId為父節點，最後設置的0是代表根節點的值，通常根結點會設置為0，代表該筆資料沒有父級物件
         }
 
+        /// <summary>
+        /// 原始菜單列表(無樹狀)
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("/api/tool/menus")]
         public List<Menu> GetMenus()
         {
             return _sqlSugarClient.Queryable<Menu>().ToList();
         }
 
+        /// <summary>
+        /// 登入以取得userID
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <param name="userPassword"></param>
+        /// <returns></returns>
         [HttpGet("/api/tool/user-id")]
         public long GetUserId(string userName, string userPassword)
         {
@@ -138,6 +158,10 @@ namespace myLittleToolsFairy.webapi.Controllers
             return info.Id;
         }
 
+        /// <summary>
+        /// Get所有Users
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("/api/tool/users")]
         public List<User> GetUsers()
         {

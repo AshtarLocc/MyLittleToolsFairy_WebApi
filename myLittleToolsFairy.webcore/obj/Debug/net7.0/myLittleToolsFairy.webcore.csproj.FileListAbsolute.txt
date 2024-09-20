@@ -1,0 +1,12 @@
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webcore\bin\Debug\net7.0\myLittleToolsFairy.webcore.deps.json
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webcore\bin\Debug\net7.0\myLittleToolsFairy.webcore.dll
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webcore\bin\Debug\net7.0\myLittleToolsFairy.webcore.pdb
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webcore\obj\Debug\net7.0\myLittleToolsFairy.webcore.csproj.AssemblyReference.cache
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webcore\obj\Debug\net7.0\myLittleToolsFairy.webcore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webcore\obj\Debug\net7.0\myLittleToolsFairy.webcore.AssemblyInfoInputs.cache
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webcore\obj\Debug\net7.0\myLittleToolsFairy.webcore.AssemblyInfo.cs
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webcore\obj\Debug\net7.0\myLittleToolsFairy.webcore.csproj.CoreCompileInputs.cache
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webcore\obj\Debug\net7.0\myLittleToolsFairy.webcore.dll
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webcore\obj\Debug\net7.0\refint\myLittleToolsFairy.webcore.dll
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webcore\obj\Debug\net7.0\myLittleToolsFairy.webcore.pdb
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webcore\obj\Debug\net7.0\ref\myLittleToolsFairy.webcore.dll
