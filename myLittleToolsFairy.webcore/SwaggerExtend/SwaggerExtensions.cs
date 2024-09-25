@@ -16,7 +16,9 @@ namespace myLittleToolsFairy.webcore.SwaggerExtend
         /// Swagger的設置項
         /// </summary>
         /// <param name="service"></param>
-        public static void AddSwaggerExt(this IServiceCollection service)
+        /// <param name="docName"></param>
+        /// <param name="docDesc"></param>
+        public static void AddSwaggerExt(this IServiceCollection service, string docName, string docDesc)
         {
             service.AddEndpointsApiExplorer();
             service.AddSwaggerGen(option =>
@@ -25,9 +27,9 @@ namespace myLittleToolsFairy.webcore.SwaggerExtend
                 {
                     option.SwaggerDoc(version, new OpenApiInfo()
                     {
-                        Title = "My Lilttle Tools Fairy Site - Api Document",
+                        Title = !string.IsNullOrWhiteSpace(docName) ? docName : "請傳入參數指定文檔名稱",
                         Version = version,
-                        Description = $"api {version}"
+                        Description = !string.IsNullOrWhiteSpace(docDesc) ? $"{docDesc} {version}" : $"請傳入參數指定文檔描述 {version}"
                     });
                 }
 
@@ -74,14 +76,16 @@ namespace myLittleToolsFairy.webcore.SwaggerExtend
         /// 使用Swagger中介
         /// </summary>
         /// <param name="app"></param>
-        public static void UseSwaggerExt(this WebApplication app)
+        /// <param name="docName"></param>
+        public static void UseSwaggerExt(this WebApplication app, string docName)
         {
+            string docNameStr = !string.IsNullOrWhiteSpace(docName) ? docName : "請傳入參數指定Api版本名稱";
             app.UseSwagger();
             app.UseSwaggerUI(option =>
             {
                 foreach (var version in typeof(ApiVersions).GetEnumNames())
                 {
-                    option.SwaggerEndpoint($"/swagger/{version}/swagger.json", $"My Lilttle Tools Fairy Site - Api Document {version}");
+                    option.SwaggerEndpoint($"/swagger/{version}/swagger.json", $"{docNameStr} - Api Document {version}");
                 }
             });
         }

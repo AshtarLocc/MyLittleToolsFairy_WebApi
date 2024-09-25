@@ -1,0 +1,12 @@
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.DbModels\bin\Debug\net7.0\myLittleToolsFairy.DbModels.deps.json
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.DbModels\bin\Debug\net7.0\myLittleToolsFairy.DbModels.dll
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.DbModels\bin\Debug\net7.0\myLittleToolsFairy.DbModels.pdb
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.DbModels\obj\Debug\net7.0\myLittleToolsFairy.DbModels.csproj.AssemblyReference.cache
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.DbModels\obj\Debug\net7.0\myLittleToolsFairy.DbModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.DbModels\obj\Debug\net7.0\myLittleToolsFairy.DbModels.AssemblyInfoInputs.cache
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.DbModels\obj\Debug\net7.0\myLittleToolsFairy.DbModels.AssemblyInfo.cs
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.DbModels\obj\Debug\net7.0\myLittleToolsFairy.DbModels.csproj.CoreCompileInputs.cache
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.DbModels\obj\Debug\net7.0\myLittleToolsFairy.DbModels.dll
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.DbModels\obj\Debug\net7.0\refint\myLittleToolsFairy.DbModels.dll
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.DbModels\obj\Debug\net7.0\myLittleToolsFairy.DbModels.pdb
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.DbModels\obj\Debug\net7.0\ref\myLittleToolsFairy.DbModels.dll
