@@ -1,4 +1,4 @@
-﻿namespace myLittleToolsFairy.webcore.SwaggerExtend
+﻿namespace myLittleToolsFairy.WebCore.SwaggerExtend
 {
     /// <summary>
     /// ApiVersions 版本列舉

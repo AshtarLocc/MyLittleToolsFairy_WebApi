@@ -1621,6 +1621,19 @@
           }
         }
       },
+      "myLittleToolsFairy.BusinessServices/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "myLittleToolsFairy.IBusinessServices": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/myLittleToolsFairy.BusinessServices.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/myLittleToolsFairy.BusinessServices.dll": {}
+        }
+      },
       "myLittleToolsFairy.DbModels/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -1635,7 +1648,17 @@
           "bin/placeholder/myLittleToolsFairy.DbModels.dll": {}
         }
       },
-      "myLittleToolsFairy.webcore/1.0.0": {
+      "myLittleToolsFairy.IBusinessServices/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/myLittleToolsFairy.IBusinessServices.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/myLittleToolsFairy.IBusinessServices.dll": {}
+        }
+      },
+      "myLittleToolsFairy.WebCore/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -1646,10 +1669,10 @@
           "myLittleToolsFairy.DbModels": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/myLittleToolsFairy.webcore.dll": {}
+          "bin/placeholder/myLittleToolsFairy.WebCore.dll": {}
         },
         "runtime": {
-          "bin/placeholder/myLittleToolsFairy.webcore.dll": {}
+          "bin/placeholder/myLittleToolsFairy.WebCore.dll": {}
         }
       }
     }
@@ -4853,15 +4876,25 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "myLittleToolsFairy.BusinessServices/1.0.0": {
+      "type": "project",
+      "path": "../myLittleToolsFairy.BusinessServices/myLittleToolsFairy.BusinessServices.csproj",
+      "msbuildProject": "../myLittleToolsFairy.BusinessServices/myLittleToolsFairy.BusinessServices.csproj"
+    },
     "myLittleToolsFairy.DbModels/1.0.0": {
       "type": "project",
       "path": "../myLittleToolsFairy.DbModels/myLittleToolsFairy.DbModels.csproj",
       "msbuildProject": "../myLittleToolsFairy.DbModels/myLittleToolsFairy.DbModels.csproj"
     },
-    "myLittleToolsFairy.webcore/1.0.0": {
+    "myLittleToolsFairy.IBusinessServices/1.0.0": {
       "type": "project",
-      "path": "../myLittleToolsFairy.webcore/myLittleToolsFairy.webcore.csproj",
-      "msbuildProject": "../myLittleToolsFairy.webcore/myLittleToolsFairy.webcore.csproj"
+      "path": "../myLittleToolsFairy.IBusinessServices/myLittleToolsFairy.IBusinessServices.csproj",
+      "msbuildProject": "../myLittleToolsFairy.IBusinessServices/myLittleToolsFairy.IBusinessServices.csproj"
+    },
+    "myLittleToolsFairy.WebCore/1.0.0": {
+      "type": "project",
+      "path": "../myLittleToolsFairy.webcore/myLittleToolsFairy.WebCore.csproj",
+      "msbuildProject": "../myLittleToolsFairy.webcore/myLittleToolsFairy.WebCore.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4871,7 +4904,9 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.20",
       "SqlSugarCore >= 5.1.4.167",
       "Swashbuckle.AspNetCore >= 6.5.0",
-      "myLittleToolsFairy.webcore >= 1.0.0"
+      "myLittleToolsFairy.BusinessServices >= 1.0.0",
+      "myLittleToolsFairy.IBusinessServices >= 1.0.0",
+      "myLittleToolsFairy.WebCore >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4881,9 +4916,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.webapi\\myLittleToolsFairy.webapi.csproj",
-      "projectName": "myLittleToolsFairy.webapi",
-      "projectPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.webapi\\myLittleToolsFairy.webapi.csproj",
+      "projectUniqueName": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.webapi\\myLittleToolsFairy.WebApi.csproj",
+      "projectName": "myLittleToolsFairy.WebApi",
+      "projectPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.webapi\\myLittleToolsFairy.WebApi.csproj",
       "packagesPath": "C:\\Users\\IT0194\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.webapi\\obj\\",
       "projectStyle": "PackageReference",
@@ -4908,8 +4943,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.webcore\\myLittleToolsFairy.webcore.csproj": {
-              "projectPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.webcore\\myLittleToolsFairy.webcore.csproj"
+            "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.BusinessServices\\myLittleToolsFairy.BusinessServices.csproj": {
+              "projectPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.BusinessServices\\myLittleToolsFairy.BusinessServices.csproj"
+            },
+            "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.IBusinessServices\\myLittleToolsFairy.IBusinessServices.csproj": {
+              "projectPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.IBusinessServices\\myLittleToolsFairy.IBusinessServices.csproj"
+            },
+            "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.WebCore\\myLittleToolsFairy.WebCore.csproj": {
+              "projectPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.WebCore\\myLittleToolsFairy.WebCore.csproj"
             }
           }
         }

@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using myLittleToolsFairy.webapi.Model.DB;
-using myLittleToolsFairy.webapi.Model.DTO;
-using myLittleToolsFairy.webcore.SwaggerExtend;
+using myLittleToolsFairy.WebApi.Model.DB;
+using myLittleToolsFairy.WebApi.Model.DTO;
+using myLittleToolsFairy.WebCore.SwaggerExtend;
 using SqlSugar;
 using System.Reflection;
 
-namespace myLittleToolsFairy.webapi.Controllers
+namespace myLittleToolsFairy.WebApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -41,9 +41,9 @@ namespace myLittleToolsFairy.webapi.Controllers
                     });
                 }
 
-                // myLittleToolsFairy.webapi.dll 是解決方案的名稱後加上.dll
-                // myLittleToolsFairy.webapi.Model 設置初始化資料表時要依循的model路徑
-                Type[] ass = Assembly.LoadFrom(AppContext.BaseDirectory + "myLittleToolsFairy.webapi.dll").GetTypes().Where(t => t.Namespace == "myLittleToolsFairy.webapi.Model.DB").ToArray();
+                // myLittleToolsFairy.WebApi.dll 是解決方案的名稱後加上.dll
+                // myLittleToolsFairy.WebApi.Model 設置初始化資料表時要依循的model路徑
+                Type[] ass = Assembly.LoadFrom(AppContext.BaseDirectory + "myLittleToolsFairy.WebApi.dll").GetTypes().Where(t => t.Namespace == "myLittleToolsFairy.WebApi.Model.DB").ToArray();
 
                 // 資料庫連線並且設置模式為CodeFirst，使用ass的配置來初始化資料表
                 _sqlSugarClient.CodeFirst.SetStringDefaultLength(200).InitTables(ass);

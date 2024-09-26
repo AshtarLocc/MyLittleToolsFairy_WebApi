@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace myLittleToolsFairy.webapi.Controllers
+namespace myLittleToolsFairy.WebApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]

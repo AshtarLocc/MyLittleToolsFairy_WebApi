@@ -1,7 +1,7 @@
 ﻿using myLittleToolsFairy.DbModels;
 using myLittleToolsFairy.DbModels.Models;
 
-namespace myLittleToolsFairy.initDataBase;
+namespace myLittleToolsFairy.InitDataBase;
 
 internal class Program
 {

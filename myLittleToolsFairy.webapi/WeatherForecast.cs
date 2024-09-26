@@ -1,4 +1,4 @@
-namespace myLittleToolsFairy.webapi
+namespace myLittleToolsFairy.WebApi
 {
     public class WeatherForecast
     {

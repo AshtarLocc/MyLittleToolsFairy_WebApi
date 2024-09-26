@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace myLittleToolsFairy.webcore.SwaggerExtend
+namespace myLittleToolsFairy.WebCore.SwaggerExtend
 {
     public static class SwaggerExtensions
     {

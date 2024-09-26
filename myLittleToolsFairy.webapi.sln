@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "myLittleToolsFairy.webapi", "myLittleToolsFairy.webapi\myLittleToolsFairy.webapi.csproj", "{93845C73-8458-47AC-BC5B-46665E1CC9DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "myLittleToolsFairy.WebApi", "myLittleToolsFairy.webapi\myLittleToolsFairy.WebApi.csproj", "{93845C73-8458-47AC-BC5B-46665E1CC9DB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "myLittleToolsFairy.webcore", "myLittleToolsFairy.webcore\myLittleToolsFairy.webcore.csproj", "{7811C260-3537-4233-956B-E857850454AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "myLittleToolsFairy.WebCore", "myLittleToolsFairy.webcore\myLittleToolsFairy.WebCore.csproj", "{7811C260-3537-4233-956B-E857850454AC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "myLittleToolsFairy.DbModels", "myLittleToolsFairy.DbModels\myLittleToolsFairy.DbModels.csproj", "{99699CE3-C304-4AE1-954E-0818FBF50A5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myLittleToolsFairy.initDataBase", "myLittleToolsFairy.initDataBase\myLittleToolsFairy.initDataBase.csproj", "{4466922F-352D-4B9A-85D5-9B5AA5A2FA54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "myLittleToolsFairy.InitDataBase", "myLittleToolsFairy.initDataBase\myLittleToolsFairy.InitDataBase.csproj", "{4466922F-352D-4B9A-85D5-9B5AA5A2FA54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myLittleToolsFairy.BusinessServices", "myLittleToolsFairy.BusinessServices\myLittleToolsFairy.BusinessServices.csproj", "{1F095B7D-7C7C-43B9-81FF-098338DF84E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myLittleToolsFairy.IBusinessServices", "myLittleToolsFairy.IBusinessServices\myLittleToolsFairy.IBusinessServices.csproj", "{674DB28D-C002-4E4A-92C0-218CDDE0A0A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{A77656BE-1C48-4029-8555-BA9650FC6E6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +39,21 @@ Global
 		{4466922F-352D-4B9A-85D5-9B5AA5A2FA54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4466922F-352D-4B9A-85D5-9B5AA5A2FA54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4466922F-352D-4B9A-85D5-9B5AA5A2FA54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F095B7D-7C7C-43B9-81FF-098338DF84E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F095B7D-7C7C-43B9-81FF-098338DF84E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F095B7D-7C7C-43B9-81FF-098338DF84E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F095B7D-7C7C-43B9-81FF-098338DF84E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{674DB28D-C002-4E4A-92C0-218CDDE0A0A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{674DB28D-C002-4E4A-92C0-218CDDE0A0A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{674DB28D-C002-4E4A-92C0-218CDDE0A0A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{674DB28D-C002-4E4A-92C0-218CDDE0A0A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1F095B7D-7C7C-43B9-81FF-098338DF84E7} = {A77656BE-1C48-4029-8555-BA9650FC6E6F}
+		{674DB28D-C002-4E4A-92C0-218CDDE0A0A0} = {A77656BE-1C48-4029-8555-BA9650FC6E6F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {024B999B-C237-4237-955B-59C88350C21A}

@@ -1,6 +1,6 @@
 ﻿using SqlSugar;
 
-namespace myLittleToolsFairy.webapi.Model.DB
+namespace myLittleToolsFairy.WebApi.Model.DB
 {
     public class User
     {

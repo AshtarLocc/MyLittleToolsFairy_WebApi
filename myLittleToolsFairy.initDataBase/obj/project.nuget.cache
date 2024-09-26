@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c98//Bg9zVXG3qsMiIBsnMR2qdYS8Y0i2RGibTIhQftSqzlRBgpNq3eiRDxZ/p9U1sRoXrhCBV24yISAE81Ivw==",
+  "dgSpecHash": "2TRpFx3u9c8KSulA5ZsgdzxpsEw4zcOeu7yXn/ZClnEpbXuKeQb3eI5f3u1Own6IKb79pKnCDWuiI2Qdo2+W6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.initDataBase\\myLittleToolsFairy.initDataBase.csproj",
+  "projectFilePath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.initDataBase\\myLittleToolsFairy.InitDataBase.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\IT0194\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\IT0194\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.webcore\\myLittleToolsFairy.webcore.csproj": {}
+    "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.webcore\\myLittleToolsFairy.WebCore.csproj": {}
   },
   "projects": {
     "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.DbModels\\myLittleToolsFairy.DbModels.csproj": {
@@ -74,12 +74,12 @@
         }
       }
     },
-    "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.webcore\\myLittleToolsFairy.webcore.csproj": {
+    "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.webcore\\myLittleToolsFairy.WebCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.webcore\\myLittleToolsFairy.webcore.csproj",
-        "projectName": "myLittleToolsFairy.webcore",
-        "projectPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.webcore\\myLittleToolsFairy.webcore.csproj",
+        "projectUniqueName": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.webcore\\myLittleToolsFairy.WebCore.csproj",
+        "projectName": "myLittleToolsFairy.WebCore",
+        "projectPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.webcore\\myLittleToolsFairy.WebCore.csproj",
         "packagesPath": "C:\\Users\\IT0194\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.webcore\\obj\\",
         "projectStyle": "PackageReference",

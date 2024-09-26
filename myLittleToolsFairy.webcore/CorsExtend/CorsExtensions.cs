@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace myLittleToolsFairy.webcore.CorsExtend
+namespace myLittleToolsFairy.WebCore.CorsExtend
 {
     public static class CorsExtensions
     {

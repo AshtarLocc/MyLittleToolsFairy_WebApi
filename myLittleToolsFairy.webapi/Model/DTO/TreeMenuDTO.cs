@@ -1,6 +1,6 @@
 ﻿using SqlSugar;
 
-namespace myLittleToolsFairy.webapi.Model.DTO
+namespace myLittleToolsFairy.WebApi.Model.DTO
 {
     public class TreeMenuDTO
     {
