@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("myLittleToolsFairy.webcore")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("myLittleToolsFairy.WebCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("myLittleToolsFairy.webcore")]
-[assembly: System.Reflection.AssemblyTitleAttribute("myLittleToolsFairy.webcore")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98fff10bdd51a4a3907469424bb99bfac395ad0a")]
+[assembly: System.Reflection.AssemblyProductAttribute("myLittleToolsFairy.WebCore")]
+[assembly: System.Reflection.AssemblyTitleAttribute("myLittleToolsFairy.WebCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // 由 MSBuild WriteCodeFragment 類別產生。

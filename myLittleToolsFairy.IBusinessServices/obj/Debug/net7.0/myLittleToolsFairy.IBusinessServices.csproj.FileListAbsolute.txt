@@ -1,0 +1,13 @@
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.IBusinessServices\bin\Debug\net7.0\myLittleToolsFairy.IBusinessServices.deps.json
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.IBusinessServices\bin\Debug\net7.0\myLittleToolsFairy.IBusinessServices.dll
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.IBusinessServices\bin\Debug\net7.0\myLittleToolsFairy.IBusinessServices.pdb
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.IBusinessServices\obj\Debug\net7.0\myLittleToolsFairy.IBusinessServices.csproj.AssemblyReference.cache
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.IBusinessServices\obj\Debug\net7.0\myLittleToolsFairy.IBusinessServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.IBusinessServices\obj\Debug\net7.0\myLittleToolsFairy.IBusinessServices.AssemblyInfoInputs.cache
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.IBusinessServices\obj\Debug\net7.0\myLittleToolsFairy.IBusinessServices.AssemblyInfo.cs
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.IBusinessServices\obj\Debug\net7.0\myLittleToolsFairy.IBusinessServices.csproj.CoreCompileInputs.cache
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.IBusinessServices\obj\Debug\net7.0\myLittleToolsFairy.IBusinessServices.sourcelink.json
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.IBusinessServices\obj\Debug\net7.0\myLittleToolsFairy.IBusinessServices.dll
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.IBusinessServices\obj\Debug\net7.0\refint\myLittleToolsFairy.IBusinessServices.dll
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.IBusinessServices\obj\Debug\net7.0\myLittleToolsFairy.IBusinessServices.pdb
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.IBusinessServices\obj\Debug\net7.0\ref\myLittleToolsFairy.IBusinessServices.dll

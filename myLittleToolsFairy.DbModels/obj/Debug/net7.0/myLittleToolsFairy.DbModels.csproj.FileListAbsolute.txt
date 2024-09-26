@@ -10,3 +10,16 @@ C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToo
 C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.DbModels\obj\Debug\net7.0\refint\myLittleToolsFairy.DbModels.dll
 C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.DbModels\obj\Debug\net7.0\myLittleToolsFairy.DbModels.pdb
 C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.DbModels\obj\Debug\net7.0\ref\myLittleToolsFairy.DbModels.dll
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.DbModels\bin\Debug\net7.0\myLittleToolsFairy.DbModels.deps.json
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.DbModels\bin\Debug\net7.0\myLittleToolsFairy.DbModels.dll
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.DbModels\bin\Debug\net7.0\myLittleToolsFairy.DbModels.pdb
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.DbModels\obj\Debug\net7.0\myLittleToolsFairy.DbModels.csproj.AssemblyReference.cache
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.DbModels\obj\Debug\net7.0\myLittleToolsFairy.DbModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.DbModels\obj\Debug\net7.0\myLittleToolsFairy.DbModels.AssemblyInfoInputs.cache
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.DbModels\obj\Debug\net7.0\myLittleToolsFairy.DbModels.AssemblyInfo.cs
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.DbModels\obj\Debug\net7.0\myLittleToolsFairy.DbModels.csproj.CoreCompileInputs.cache
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.DbModels\obj\Debug\net7.0\myLittleToolsFairy.DbModels.sourcelink.json
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.DbModels\obj\Debug\net7.0\myLittleToolsFairy.DbModels.dll
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.DbModels\obj\Debug\net7.0\refint\myLittleToolsFairy.DbModels.dll
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.DbModels\obj\Debug\net7.0\myLittleToolsFairy.DbModels.pdb
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.DbModels\obj\Debug\net7.0\ref\myLittleToolsFairy.DbModels.dll

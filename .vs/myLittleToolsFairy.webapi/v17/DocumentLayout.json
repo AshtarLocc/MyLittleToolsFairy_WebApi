@@ -1,0 +1,145 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{93845C73-8458-47AC-BC5B-46665E1CC9DB}|myLittleToolsFairy.webapi\\myLittleToolsFairy.WebApi.csproj|c:\\users\\ashta\\desktop\\mylittletoolsfairy\\mylittletoolsfairy_webapi\\mylittletoolsfairy.webapi\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93845C73-8458-47AC-BC5B-46665E1CC9DB}|myLittleToolsFairy.webapi\\myLittleToolsFairy.WebApi.csproj|solutionrelative:mylittletoolsfairy.webapi\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{674DB28D-C002-4E4A-92C0-218CDDE0A0A0}|myLittleToolsFairy.IBusinessServices\\myLittleToolsFairy.IBusinessServices.csproj|c:\\users\\ashta\\desktop\\mylittletoolsfairy\\mylittletoolsfairy_webapi\\mylittletoolsfairy.ibusinessservices\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{674DB28D-C002-4E4A-92C0-218CDDE0A0A0}|myLittleToolsFairy.IBusinessServices\\myLittleToolsFairy.IBusinessServices.csproj|solutionrelative:mylittletoolsfairy.ibusinessservices\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F095B7D-7C7C-43B9-81FF-098338DF84E7}|myLittleToolsFairy.BusinessServices\\myLittleToolsFairy.BusinessServices.csproj|c:\\users\\ashta\\desktop\\mylittletoolsfairy\\mylittletoolsfairy_webapi\\mylittletoolsfairy.businessservices\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F095B7D-7C7C-43B9-81FF-098338DF84E7}|myLittleToolsFairy.BusinessServices\\myLittleToolsFairy.BusinessServices.csproj|solutionrelative:mylittletoolsfairy.businessservices\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{674DB28D-C002-4E4A-92C0-218CDDE0A0A0}|myLittleToolsFairy.IBusinessServices\\myLittleToolsFairy.IBusinessServices.csproj|c:\\users\\ashta\\desktop\\mylittletoolsfairy\\mylittletoolsfairy_webapi\\mylittletoolsfairy.ibusinessservices\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{674DB28D-C002-4E4A-92C0-218CDDE0A0A0}|myLittleToolsFairy.IBusinessServices\\myLittleToolsFairy.IBusinessServices.csproj|solutionrelative:mylittletoolsfairy.ibusinessservices\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{674DB28D-C002-4E4A-92C0-218CDDE0A0A0}|myLittleToolsFairy.IBusinessServices\\myLittleToolsFairy.IBusinessServices.csproj|c:\\users\\ashta\\desktop\\mylittletoolsfairy\\mylittletoolsfairy_webapi\\mylittletoolsfairy.ibusinessservices\\model\\pagingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{674DB28D-C002-4E4A-92C0-218CDDE0A0A0}|myLittleToolsFairy.IBusinessServices\\myLittleToolsFairy.IBusinessServices.csproj|solutionrelative:mylittletoolsfairy.ibusinessservices\\model\\pagingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93845C73-8458-47AC-BC5B-46665E1CC9DB}|myLittleToolsFairy.webapi\\myLittleToolsFairy.WebApi.csproj|c:\\users\\ashta\\desktop\\mylittletoolsfairy\\mylittletoolsfairy_webapi\\mylittletoolsfairy.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93845C73-8458-47AC-BC5B-46665E1CC9DB}|myLittleToolsFairy.webapi\\myLittleToolsFairy.WebApi.csproj|solutionrelative:mylittletoolsfairy.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F095B7D-7C7C-43B9-81FF-098338DF84E7}|myLittleToolsFairy.BusinessServices\\myLittleToolsFairy.BusinessServices.csproj|c:\\users\\ashta\\desktop\\mylittletoolsfairy\\mylittletoolsfairy_webapi\\mylittletoolsfairy.businessservices\\mylittletoolsfairy.businessservices.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1F095B7D-7C7C-43B9-81FF-098338DF84E7}|myLittleToolsFairy.BusinessServices\\myLittleToolsFairy.BusinessServices.csproj|solutionrelative:mylittletoolsfairy.businessservices\\mylittletoolsfairy.businessservices.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 481,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PagingData.cs",
+              "DocumentMoniker": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.IBusinessServices\\Model\\PagingData.cs",
+              "RelativeDocumentMoniker": "myLittleToolsFairy.IBusinessServices\\Model\\PagingData.cs",
+              "ToolTip": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.IBusinessServices\\Model\\PagingData.cs",
+              "RelativeToolTip": "myLittleToolsFairy.IBusinessServices\\Model\\PagingData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T16:28:51.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaseService.cs",
+              "DocumentMoniker": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.BusinessServices\\BaseService.cs",
+              "RelativeDocumentMoniker": "myLittleToolsFairy.BusinessServices\\BaseService.cs",
+              "ToolTip": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.BusinessServices\\BaseService.cs",
+              "RelativeToolTip": "myLittleToolsFairy.BusinessServices\\BaseService.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAswBgAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T15:22:32.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.webapi\\Program.cs",
+              "RelativeDocumentMoniker": "myLittleToolsFairy.webapi\\Program.cs",
+              "ToolTip": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.webapi\\Program.cs",
+              "RelativeToolTip": "myLittleToolsFairy.webapi\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T15:22:32.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestController.cs",
+              "DocumentMoniker": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.webapi\\Controllers\\TestController.cs",
+              "RelativeDocumentMoniker": "myLittleToolsFairy.webapi\\Controllers\\TestController.cs",
+              "ToolTip": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.webapi\\Controllers\\TestController.cs",
+              "RelativeToolTip": "myLittleToolsFairy.webapi\\Controllers\\TestController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwCkAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T15:22:32.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.IBusinessServices\\IUserService.cs",
+              "RelativeDocumentMoniker": "myLittleToolsFairy.IBusinessServices\\IUserService.cs",
+              "ToolTip": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.IBusinessServices\\IUserService.cs",
+              "RelativeToolTip": "myLittleToolsFairy.IBusinessServices\\IUserService.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAiwAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T15:22:32.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "myLittleToolsFairy.BusinessServices.csproj",
+              "DocumentMoniker": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.BusinessServices\\myLittleToolsFairy.BusinessServices.csproj",
+              "RelativeDocumentMoniker": "myLittleToolsFairy.BusinessServices\\myLittleToolsFairy.BusinessServices.csproj",
+              "ToolTip": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.BusinessServices\\myLittleToolsFairy.BusinessServices.csproj",
+              "RelativeToolTip": "myLittleToolsFairy.BusinessServices\\myLittleToolsFairy.BusinessServices.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-26T15:22:32.057Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 273,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IBaseService.cs",
+              "DocumentMoniker": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.IBusinessServices\\IBaseService.cs",
+              "RelativeDocumentMoniker": "myLittleToolsFairy.IBusinessServices\\IBaseService.cs",
+              "ToolTip": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.IBusinessServices\\IBaseService.cs",
+              "RelativeToolTip": "myLittleToolsFairy.IBusinessServices\\IBaseService.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAADwvxYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T15:22:32.039Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

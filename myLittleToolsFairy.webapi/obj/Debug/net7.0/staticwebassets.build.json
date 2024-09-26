@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "3rWT/qQjt1I9/SRVwv9+X9vyqy4O6LCiOUpXE7MCNx8=",
-  "Source": "myLittleToolsFairy.webapi",
-  "BasePath": "_content/myLittleToolsFairy.webapi",
+  "Hash": "eTzd46eK9GnvwW4TE7m/IO2ie8vEwKn2z4KGhFK441E=",
+  "Source": "myLittleToolsFairy.WebApi",
+  "BasePath": "_content/myLittleToolsFairy.WebApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

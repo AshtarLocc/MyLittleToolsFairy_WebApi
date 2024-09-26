@@ -1,28 +1,28 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>myLittleToolsFairy.webapi</name>
+        <name>myLittleToolsFairy.WebApi</name>
     </assembly>
     <members>
-        <member name="M:myLittleToolsFairy.webapi.Controllers.ToolController.CodeFirst">
+        <member name="M:myLittleToolsFairy.WebApi.Controllers.ToolController.CodeFirst">
             <summary>
             CodeFirst產生測試資料
             </summary>
             <returns></returns>
         </member>
-        <member name="M:myLittleToolsFairy.webapi.Controllers.ToolController.GetTreeMenus">
+        <member name="M:myLittleToolsFairy.WebApi.Controllers.ToolController.GetTreeMenus">
             <summary>
             樹狀菜單列表
             </summary>
             <returns></returns>
         </member>
-        <member name="M:myLittleToolsFairy.webapi.Controllers.ToolController.GetMenus">
+        <member name="M:myLittleToolsFairy.WebApi.Controllers.ToolController.GetMenus">
             <summary>
             原始菜單列表(無樹狀)
             </summary>
             <returns></returns>
         </member>
-        <member name="M:myLittleToolsFairy.webapi.Controllers.ToolController.GetUserId(System.String,System.String)">
+        <member name="M:myLittleToolsFairy.WebApi.Controllers.ToolController.GetUserId(System.String,System.String)">
             <summary>
             登入以取得userID
             </summary>
@@ -30,7 +30,7 @@
             <param name="userPassword"></param>
             <returns></returns>
         </member>
-        <member name="M:myLittleToolsFairy.webapi.Controllers.ToolController.GetUsers">
+        <member name="M:myLittleToolsFairy.WebApi.Controllers.ToolController.GetUsers">
             <summary>
             Get所有Users
             </summary>

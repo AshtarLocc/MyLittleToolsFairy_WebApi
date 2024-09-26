@@ -1,0 +1,16 @@
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.BusinessServices\obj\Debug\net7.0\myLittleToolsFairy.BusinessServices.csproj.AssemblyReference.cache
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.BusinessServices\obj\Debug\net7.0\myLittleToolsFairy.BusinessServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.BusinessServices\obj\Debug\net7.0\myLittleToolsFairy.BusinessServices.AssemblyInfoInputs.cache
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.BusinessServices\obj\Debug\net7.0\myLittleToolsFairy.BusinessServices.AssemblyInfo.cs
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.BusinessServices\obj\Debug\net7.0\myLittleToolsFairy.BusinessServices.csproj.CoreCompileInputs.cache
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.BusinessServices\obj\Debug\net7.0\myLittleToolsFairy.BusinessServices.sourcelink.json
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.BusinessServices\bin\Debug\net7.0\myLittleToolsFairy.BusinessServices.deps.json
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.BusinessServices\bin\Debug\net7.0\myLittleToolsFairy.BusinessServices.dll
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.BusinessServices\bin\Debug\net7.0\myLittleToolsFairy.BusinessServices.pdb
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.BusinessServices\bin\Debug\net7.0\myLittleToolsFairy.IBusinessServices.dll
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.BusinessServices\bin\Debug\net7.0\myLittleToolsFairy.IBusinessServices.pdb
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.BusinessServices\obj\Debug\net7.0\myLittle.F00916A0.Up2Date
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.BusinessServices\obj\Debug\net7.0\myLittleToolsFairy.BusinessServices.dll
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.BusinessServices\obj\Debug\net7.0\refint\myLittleToolsFairy.BusinessServices.dll
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.BusinessServices\obj\Debug\net7.0\myLittleToolsFairy.BusinessServices.pdb
+C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.BusinessServices\obj\Debug\net7.0\ref\myLittleToolsFairy.BusinessServices.dll
