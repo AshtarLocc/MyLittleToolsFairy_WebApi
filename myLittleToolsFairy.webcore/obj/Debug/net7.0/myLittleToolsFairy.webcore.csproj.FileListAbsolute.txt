@@ -26,3 +26,6 @@ C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleTool
 C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.webcore\obj\Debug\net7.0\refint\myLittleToolsFairy.WebCore.dll
 C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.webcore\obj\Debug\net7.0\myLittleToolsFairy.WebCore.pdb
 C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.WebCore\obj\Debug\net7.0\ref\myLittleToolsFairy.WebCore.dll
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webcore\bin\Debug\net7.0\myLittleToolsFairy.DbModels.dll
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webcore\bin\Debug\net7.0\myLittleToolsFairy.DbModels.pdb
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webcore\obj\Debug\net7.0\myLittleToolsFairy.WebCore.csproj.CopyComplete

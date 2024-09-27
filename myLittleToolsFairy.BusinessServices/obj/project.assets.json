@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net7.0": {
+      "LinqKit.Core/1.2.5": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/LinqKit.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/LinqKit.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore/7.0.20": {
         "type": "package",
         "dependencies": {
@@ -347,6 +360,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "LinqKit.Core": "1.2.5",
           "System.Data.SqlClient": "4.8.6"
         },
         "compile": {
@@ -359,6 +373,36 @@
     }
   },
   "libraries": {
+    "LinqKit.Core/1.2.5": {
+      "sha512": "+5UKyagtVX33TSeOGorYzDXus/ypAISfM7HFfrix4BEmuuGF+nhSjf8P9csejLQ79ny5ms33M5/lQ2SkwC0Jxw==",
+      "type": "package",
+      "path": "linqkit.core/1.2.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/LinqKit.Core.dll",
+        "lib/net35/LinqKit.Core.xml",
+        "lib/net40/LinqKit.Core.dll",
+        "lib/net40/LinqKit.Core.xml",
+        "lib/net45/LinqKit.Core.dll",
+        "lib/net45/LinqKit.Core.xml",
+        "lib/netstandard1.3/LinqKit.Core.dll",
+        "lib/netstandard1.3/LinqKit.Core.xml",
+        "lib/netstandard2.0/LinqKit.Core.dll",
+        "lib/netstandard2.0/LinqKit.Core.xml",
+        "lib/netstandard2.1/LinqKit.Core.dll",
+        "lib/netstandard2.1/LinqKit.Core.xml",
+        "lib/portable40-net40+sl5+win8+wp8+wpa81/LinqKit.Core.dll",
+        "lib/portable40-net40+sl5+win8+wp8+wpa81/LinqKit.Core.xml",
+        "lib/portable45-net45+win8+wp8+wpa81/LinqKit.Core.dll",
+        "lib/portable45-net45+win8+wp8+wpa81/LinqKit.Core.xml",
+        "lib/uap10.0.10240/LinqKit.Core.dll",
+        "lib/uap10.0.10240/LinqKit.Core.pri",
+        "lib/uap10.0.10240/LinqKit.Core.xml",
+        "linqkit.core.1.2.5.nupkg.sha512",
+        "linqkit.core.nuspec"
+      ]
+    },
     "Microsoft.EntityFrameworkCore/7.0.20": {
       "sha512": "Wvmktob+dBPvMZdTj2yRrfDi3ERL/RRcE8EWjr3DuIjWn+6giqD81+oNM/09IthwZ3IsSMHgpiVVmTwAW92gEQ==",
       "type": "package",
@@ -990,29 +1034,30 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "LinqKit.Core >= 1.2.5",
       "Microsoft.EntityFrameworkCore >= 7.0.20",
       "System.Data.SqlClient >= 4.8.6",
       "myLittleToolsFairy.IBusinessServices >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ashta\\.nuget\\packages\\": {},
+    "C:\\Users\\IT0194\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.BusinessServices\\myLittleToolsFairy.BusinessServices.csproj",
+      "projectUniqueName": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.BusinessServices\\myLittleToolsFairy.BusinessServices.csproj",
       "projectName": "myLittleToolsFairy.BusinessServices",
-      "projectPath": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.BusinessServices\\myLittleToolsFairy.BusinessServices.csproj",
-      "packagesPath": "C:\\Users\\ashta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.BusinessServices\\obj\\",
+      "projectPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.BusinessServices\\myLittleToolsFairy.BusinessServices.csproj",
+      "packagesPath": "C:\\Users\\IT0194\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.BusinessServices\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ashta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\IT0194\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1028,8 +1073,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.IBusinessServices\\myLittleToolsFairy.IBusinessServices.csproj": {
-              "projectPath": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.IBusinessServices\\myLittleToolsFairy.IBusinessServices.csproj"
+            "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.IBusinessServices\\myLittleToolsFairy.IBusinessServices.csproj": {
+              "projectPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.IBusinessServices\\myLittleToolsFairy.IBusinessServices.csproj"
             }
           }
         }
@@ -1038,17 +1083,16 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "LinqKit.Core": {
+            "target": "Package",
+            "version": "[1.2.5, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[7.0.20, )"
@@ -1074,7 +1118,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

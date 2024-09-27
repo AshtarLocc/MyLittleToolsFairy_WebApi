@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.webcore\\myLittleToolsFairy.WebCore.csproj": {}
+    "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.webcore\\myLittleToolsFairy.WebCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.DbModels\\myLittleToolsFairy.DbModels.csproj": {
+    "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.DbModels\\myLittleToolsFairy.DbModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.DbModels\\myLittleToolsFairy.DbModels.csproj",
+        "projectUniqueName": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.DbModels\\myLittleToolsFairy.DbModels.csproj",
         "projectName": "myLittleToolsFairy.DbModels",
-        "projectPath": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.DbModels\\myLittleToolsFairy.DbModels.csproj",
-        "packagesPath": "C:\\Users\\ashta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.DbModels\\obj\\",
+        "projectPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.DbModels\\myLittleToolsFairy.DbModels.csproj",
+        "packagesPath": "C:\\Users\\IT0194\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.DbModels\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ashta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\IT0194\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -39,17 +39,16 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "LinqKit.Core": {
+              "target": "Package",
+              "version": "[1.2.5, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.20, )"
@@ -79,24 +78,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.webcore\\myLittleToolsFairy.WebCore.csproj": {
+    "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.webcore\\myLittleToolsFairy.WebCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.webcore\\myLittleToolsFairy.WebCore.csproj",
+        "projectUniqueName": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.webcore\\myLittleToolsFairy.WebCore.csproj",
         "projectName": "myLittleToolsFairy.WebCore",
-        "projectPath": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.webcore\\myLittleToolsFairy.WebCore.csproj",
-        "packagesPath": "C:\\Users\\ashta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.webcore\\obj\\",
+        "projectPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.webcore\\myLittleToolsFairy.WebCore.csproj",
+        "packagesPath": "C:\\Users\\IT0194\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.webcore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ashta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\IT0194\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -112,8 +111,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.DbModels\\myLittleToolsFairy.DbModels.csproj": {
-                "projectPath": "C:\\Users\\ashta\\Desktop\\MyLittleToolsFairy\\MyLittleToolsFairy_WebApi\\myLittleToolsFairy.DbModels\\myLittleToolsFairy.DbModels.csproj"
+              "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.DbModels\\myLittleToolsFairy.DbModels.csproj": {
+                "projectPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.DbModels\\myLittleToolsFairy.DbModels.csproj"
               }
             }
           }
@@ -122,17 +121,16 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "LinqKit.Core": {
+              "target": "Package",
+              "version": "[1.2.5, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.20, )"
@@ -170,7 +168,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

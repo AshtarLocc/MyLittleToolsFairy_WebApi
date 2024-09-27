@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using myLittleToolsFairy.DbModels.Models;
 using myLittleToolsFairy.WebApi.Model.DB;
 using myLittleToolsFairy.WebApi.Model.DTO;
 using myLittleToolsFairy.WebCore.SwaggerExtend;
@@ -41,17 +42,30 @@ namespace myLittleToolsFairy.WebApi.Controllers
                     });
                 }
 
-                // myLittleToolsFairy.WebApi.dll 是解決方案的名稱後加上.dll
+                // myLittleToolsFairy.webapi.dll 是解決方案的名稱後加上.dll
                 // myLittleToolsFairy.WebApi.Model 設置初始化資料表時要依循的model路徑
-                Type[] ass = Assembly.LoadFrom(AppContext.BaseDirectory + "myLittleToolsFairy.WebApi.dll").GetTypes().Where(t => t.Namespace == "myLittleToolsFairy.WebApi.Model.DB").ToArray();
+                Type[] ass = Assembly.LoadFrom(AppContext.BaseDirectory + "myLittleToolsFairy.webapi.dll").GetTypes().Where(t => t.Namespace == "myLittleToolsFairy.WebApi.Model.DB").ToArray();
 
                 // 資料庫連線並且設置模式為CodeFirst，使用ass的配置來初始化資料表
                 _sqlSugarClient.CodeFirst.SetStringDefaultLength(200).InitTables(ass);
 
+                //User users = new User()
+                //{
+                //    Name = "Admin",
+                //    Password = "123456"
+                //};
                 User users = new User()
                 {
                     Name = "Admin",
-                    Password = "123456"
+                    Password = "123456",
+                    UserType = 1,
+                    Phone = "11321",
+                    Mobile = "0694546",
+                    Address = "鳳山區",
+                    Email = "kao@gmail.com",
+                    Sex = 1,
+                    ImageUrl = "01.jpg",
+                    LastLoginTime = DateTime.Now
                 };
                 _sqlSugarClient.Insertable(users).ExecuteCommand();
 
@@ -155,7 +169,8 @@ namespace myLittleToolsFairy.WebApi.Controllers
             {
                 return 0;
             }
-            return info.Id;
+            return info.UserId;
+            //return info.Id;
         }
 
         /// <summary>
@@ -171,6 +186,52 @@ namespace myLittleToolsFairy.WebApi.Controllers
                 return new List<User> { };
             }
             return data;
+        }
+
+        [HttpGet("/api/tool/CF")]
+        public string CodeFirst_EFCORE()
+        {
+            try
+            {
+                _sqlSugarClient.DbMaintenance.CreateDatabase();
+
+                var tlist = _sqlSugarClient.DbMaintenance.GetTableInfoList();
+                if (tlist != null && tlist.Count > 0)
+                {
+                    tlist.ForEach(p =>
+                    {
+                        _sqlSugarClient.DbMaintenance.DropTable(p.Name);
+                    });
+                }
+
+                // myLittleToolsFairy.webapi.dll 是解決方案的名稱後加上.dll
+                // myLittleToolsFairy.WebApi.Model 設置初始化資料表時要依循的model路徑
+                Type[] ass = Assembly.LoadFrom(AppContext.BaseDirectory + "myLittleToolsFairy.webapi.dll").GetTypes().Where(t => t.Namespace == "myLittleToolsFairy.WebApi.Model").ToArray();
+
+                // 資料庫連線並且設置模式為CodeFirst，使用ass的配置來初始化資料表
+                _sqlSugarClient.CodeFirst.SetStringDefaultLength(200).InitTables(ass);
+
+                User users = new User()
+                {
+                    Name = "Admin",
+                    Password = "123456",
+                    UserType = 1,
+                    Phone = "11321",
+                    Mobile = "0694546",
+                    Address = "鳳山區",
+                    Email = "kao@gmail.com",
+                    Sex = 1,
+                    ImageUrl = "01.jpg",
+                    LastLoginTime = DateTime.Now
+                };
+                _sqlSugarClient.Insertable(users).ExecuteCommand();
+
+                return "OK";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
         }
     }
 }

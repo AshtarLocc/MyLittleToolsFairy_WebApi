@@ -11,3 +11,15 @@ C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleTool
 C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.IBusinessServices\obj\Debug\net7.0\refint\myLittleToolsFairy.IBusinessServices.dll
 C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.IBusinessServices\obj\Debug\net7.0\myLittleToolsFairy.IBusinessServices.pdb
 C:\Users\ashta\Desktop\MyLittleToolsFairy\MyLittleToolsFairy_WebApi\myLittleToolsFairy.IBusinessServices\obj\Debug\net7.0\ref\myLittleToolsFairy.IBusinessServices.dll
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.IBusinessServices\bin\Debug\net7.0\myLittleToolsFairy.IBusinessServices.deps.json
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.IBusinessServices\bin\Debug\net7.0\myLittleToolsFairy.IBusinessServices.dll
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.IBusinessServices\bin\Debug\net7.0\myLittleToolsFairy.IBusinessServices.pdb
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.IBusinessServices\obj\Debug\net7.0\myLittleToolsFairy.IBusinessServices.csproj.AssemblyReference.cache
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.IBusinessServices\obj\Debug\net7.0\myLittleToolsFairy.IBusinessServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.IBusinessServices\obj\Debug\net7.0\myLittleToolsFairy.IBusinessServices.AssemblyInfoInputs.cache
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.IBusinessServices\obj\Debug\net7.0\myLittleToolsFairy.IBusinessServices.AssemblyInfo.cs
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.IBusinessServices\obj\Debug\net7.0\myLittleToolsFairy.IBusinessServices.csproj.CoreCompileInputs.cache
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.IBusinessServices\obj\Debug\net7.0\myLittleToolsFairy.IBusinessServices.dll
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.IBusinessServices\obj\Debug\net7.0\refint\myLittleToolsFairy.IBusinessServices.dll
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.IBusinessServices\obj\Debug\net7.0\myLittleToolsFairy.IBusinessServices.pdb
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.IBusinessServices\obj\Debug\net7.0\ref\myLittleToolsFairy.IBusinessServices.dll
