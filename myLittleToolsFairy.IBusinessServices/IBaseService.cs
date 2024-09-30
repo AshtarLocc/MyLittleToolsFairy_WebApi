@@ -38,17 +38,50 @@ namespace myLittleToolsFairy.IBusinessServices
         /// <returns></returns>
         public IQueryable<T> Query<T>(Expression<Func<T, bool>> funcWhere) where T : class;
 
-        public PagingData<T> QueryPage<T, S>(Expression<Func<T, bool>> funcWhere, int pageSize, int pageInex, Expression<Func<T, S>> funcOrderby, bool isAsc = true) where T : class;
+        public PagingData<T> QueryPage<T, S>(Expression<Func<T, bool>> funcWhere, int pageSize, int pageIndex, Expression<Func<T, S>> funcOrderby, bool isAsc = true) where T : class;
 
         #endregion Query
 
         //#region Insert
 
+        ///// <summary>
+        ///// 單筆資料新增
+        ///// </summary>
+        ///// <typeparam name="T"></typeparam>
+        ///// <param name="t"></param>
+        ///// <returns></returns>
         //public T Insert<T>(T t) where T : class;
 
+        ///// <summary>
+        ///// 多筆資料新增
+        ///// </summary>
+        ///// <typeparam name="T"></typeparam>
+        ///// <param name="tList"></param>
+        ///// <returns></returns>
         //public IEnumerable<T> Insert<T>(IEnumerable<T> tList) where T : class;
 
         //#endregion Insert
+
+        #region Sql Execute
+
+        /// <summary>
+        /// 執行SQL語法，返回「IQueryble 延遲加載的查詢結果集合」，意思是還沒有真正執行查詢，並且支持在真正執行查詢(例如調用First()等等)之前再進行其他操作
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="sql"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
+        public IQueryable<T> ExcuteQuery<T>(string sql, SqlParameter[] parameters) where T : class;
+
+        /// <summary>
+        /// 執行SQL語法，沒有返回值
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="sql"></param>
+        /// <param name="parameters"></param>
+        public void Excute<T>(string sql, SqlParameter[] parameters) where T : class;
+
+        #endregion Sql Execute
 
         //#region Update
 
@@ -67,14 +100,6 @@ namespace myLittleToolsFairy.IBusinessServices
         //public void Delete<T>(IEnumerable<T> tList) where T : class;
 
         //#endregion Delete
-
-        //#region Other
-
-        //public IQueryable<T> ExcuteQuery<T>(string sql, SqlParameter[] parameters) where T : class;
-
-        //public void Excute<T>(string sql, SqlParameter[] parameters) where T : class;
-
-        //#endregion Other
 
         //public void Add();
 

@@ -59,11 +59,15 @@ namespace myLittleToolsFairy.BusinessServices
 
         public PagingData<T> QueryPage<T, S>(Expression<Func<T, bool>> funcWhere, int pageSize, int pageIndex, Expression<Func<T, S>> funcOrderBy, bool isAsc = true) where T : class
         {
+            // 定義要查詢的類別
             var list = Set<T>();
+
+            // 若有傳入搜尋條件，就將條件代入並使用Where()來查詢list
             if (funcWhere != null)
             {
                 list = list.Where<T>(funcWhere);
             }
+            // 根據isAsc決定是使用OrderBy() 升冪排序，還是使用OrderByDescending() 降冪排序，並用funcOrderBy作為排序的依據
             if (isAsc)
             {
                 list = list.OrderBy(funcOrderBy);
@@ -72,16 +76,37 @@ namespace myLittleToolsFairy.BusinessServices
             {
                 list = list.OrderByDescending(funcOrderBy);
             }
+
+            // pageIndex : 傳入的參數，指 當前頁數 。  pageSize : 傳入的參數，指 每頁筆數 。
             PagingData<T> result = new PagingData<T>()
             {
+                // 使用.Skip()方法跳過指定的「資料筆數」，將 pageIndex 當前頁數 -1 即可得知在當頁之前還有多少其他需要跳過的頁，再將需跳過的頁數與 pageSize 相乘即可得知欲跳過的總資料筆數。
+                // 使用Take()方法來從「被跳過的資料筆數」後取出指定筆數的資料，舉例來說，若已知跳過100筆，且每頁有20筆資料，那麼Take(pageSize)就會從前100筆之後開始拿出20資料。
                 DataList = list.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList(),
                 PageIndex = pageIndex,
                 PageSize = pageSize,
+                // list 是尚未進行分頁處理的原始查詢結果，計算總筆數即可
                 RecordCount = list.Count()
             };
             return result;
         }
 
         #endregion Query
+
+        #region Insert
+
+        //public T Insert<T>(T t) where T : class
+        //{
+        //    this.Context.Set<T>().Add(t);
+        //    this.co
+        //    return t;
+        //}
+
+        //public IEnumerable<T> Insert<T>(IEnumerable<T> tList) where T : class
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        #endregion Insert
     }
 }

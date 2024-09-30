@@ -36,5 +36,34 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:myLittleToolsFairy.WebApi.Controllers.UserController.GetUserById(System.Int32)">
+            <summary>
+            User - 傳入ID查詢
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:myLittleToolsFairy.WebApi.Controllers.UserController.GetUsers">
+            <summary>
+            User - 查詢全部
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:myLittleToolsFairy.WebApi.Controllers.UserController.QueryUsersByNameAndUserType(System.String,System.Nullable{System.Int32})">
+            <summary>
+            User - 透過 名字 與 使用者類型 查詢
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:myLittleToolsFairy.WebApi.Controllers.UserController.QueryPageUsersByNameAndUserType(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32)">
+            <summary>
+            User - 透過 使用者類型 與 性別 分頁查詢
+            </summary>
+            <param name="userType"></param>
+            <param name="sex"></param>
+            <param name="pageSize"></param>
+            <param name="pageIndex"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>

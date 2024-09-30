@@ -56,6 +56,7 @@ namespace myLittleToolsFairy.WebApi.Controllers
                 //};
                 User users = new User()
                 {
+                    UserId = 0,
                     Name = "Admin",
                     Password = "123456",
                     UserType = 1,
@@ -67,7 +68,71 @@ namespace myLittleToolsFairy.WebApi.Controllers
                     ImageUrl = "01.jpg",
                     LastLoginTime = DateTime.Now
                 };
+
+                User user2 = new User()
+                {
+                    UserId = 1,
+                    Name = "Two",
+                    Password = "123456",
+                    UserType = 1,
+                    Phone = "11321",
+                    Mobile = "0694546",
+                    Address = "鳳山區",
+                    Email = "kao@gmail.com",
+                    Sex = 1,
+                    ImageUrl = "01.jpg",
+                    LastLoginTime = DateTime.Now
+                };
+
+                User user3 = new User()
+                {
+                    UserId = 2,
+                    Name = "Three",
+                    Password = "546541652",
+                    UserType = 0,
+                    Phone = "11321",
+                    Mobile = "0694546",
+                    Address = "鳳山區",
+                    Email = "kao@gmail.com",
+                    Sex = 0,
+                    ImageUrl = "01.jpg",
+                    LastLoginTime = DateTime.Now
+                };
+
+                User user4 = new User()
+                {
+                    UserId = 3,
+                    Name = "Four",
+                    Password = "252",
+                    UserType = 0,
+                    Phone = "11321",
+                    Mobile = "0694546",
+                    Address = "鳳山區",
+                    Email = "kao@gmail.com",
+                    Sex = 1,
+                    ImageUrl = "01.jpg",
+                    LastLoginTime = DateTime.Now
+                };
+
+                User user5 = new User()
+                {
+                    UserId = 4,
+                    Name = "Five",
+                    Password = "9614",
+                    UserType = 0,
+                    Phone = "11321",
+                    Mobile = "0694546",
+                    Address = "鳳山區",
+                    Email = "kao@gmail.com",
+                    Sex = 1,
+                    ImageUrl = "01.jpg",
+                    LastLoginTime = DateTime.Now
+                };
                 _sqlSugarClient.Insertable(users).ExecuteCommand();
+                _sqlSugarClient.Insertable(user2).ExecuteCommand();
+                _sqlSugarClient.Insertable(user3).ExecuteCommand();
+                _sqlSugarClient.Insertable(user4).ExecuteCommand();
+                _sqlSugarClient.Insertable(user5).ExecuteCommand();
 
                 Menu m1 = new Menu()
                 {
