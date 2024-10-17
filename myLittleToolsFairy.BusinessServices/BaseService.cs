@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 using myLittleToolsFairy.IBusinessServices;
 using myLittleToolsFairy.IBusinessServices.Model;
 using System;
@@ -108,5 +109,54 @@ namespace myLittleToolsFairy.BusinessServices
         //}
 
         #endregion Insert
+
+        #region Other
+
+        public void Commit()
+        {
+            Context.SaveChanges();
+        }
+
+        public IQueryable<T> ExcuteQuery<T>(string sql, SqlParameter[] parameters) where T : class
+        {
+            return this.Context.Set<T>().FromSqlRaw(sql, parameters);
+        }
+
+        public void Excute<T>(string sql, SqlParameter[] parameters) where T : class
+        {
+            // IDbContextTransaction : Entity Framework Core 自帶，處理交易行為的接口。
+            IDbContextTransaction trans = null;
+            try
+            {
+                // BeginTransaction() 開始交易的意思。
+                trans = Context.Database.BeginTransaction();
+                // 執行查詢
+                this.Context.Database.ExecuteSqlRaw(sql, parameters);
+                // 用我們自己定義的 Commit() 方法來 儲存改動
+                trans.Commit();
+            }
+            catch (Exception ex)
+            {
+                if (trans != null)
+                {
+                    trans.Rollback();
+                }
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// 釋放Context的資源
+        /// 聲明為virtual，代表可以覆寫，在必要時可以自訂義Dispose的邏輯。
+        /// </summary>
+        public virtual void Dispose()
+        {
+            if (Context != null)
+            {
+                Context.Dispose();
+            }
+        }
+
+        #endregion Other
     }
 }

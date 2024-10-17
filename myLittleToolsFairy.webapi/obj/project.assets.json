@@ -1730,6 +1730,7 @@
         "dependencies": {
           "LinqKit.Core": "1.2.5",
           "Microsoft.EntityFrameworkCore": "7.0.20",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.20",
           "System.Data.SqlClient": "4.8.6",
           "myLittleToolsFairy.IBusinessServices": "1.0.0"
         },
@@ -1746,6 +1747,7 @@
         "dependencies": {
           "LinqKit.Core": "1.2.5",
           "Microsoft.EntityFrameworkCore": "7.0.20",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.20",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.20",
           "System.Data.SqlClient": "4.8.6"
         },
@@ -1761,6 +1763,7 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "LinqKit.Core": "1.2.5",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.20",
           "System.Data.SqlClient": "4.8.6"
         },
         "compile": {
@@ -1776,6 +1779,7 @@
         "dependencies": {
           "LinqKit.Core": "1.2.5",
           "Microsoft.EntityFrameworkCore": "7.0.20",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.20",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.20",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1",
           "Swashbuckle.AspNetCore": "6.5.0",
@@ -5242,6 +5246,7 @@
       "LinqKit.Core >= 1.2.5",
       "Microsoft.AspNetCore.OpenApi >= 7.0.7",
       "Microsoft.EntityFrameworkCore >= 7.0.20",
+      "Microsoft.EntityFrameworkCore.Relational >= 7.0.20",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.20",
       "SqlSugarCore >= 5.1.4.167",
       "Swashbuckle.AspNetCore >= 6.5.0",
@@ -5316,6 +5321,10 @@
             "version": "[7.0.7, )"
           },
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[7.0.20, )"
+          },
+          "Microsoft.EntityFrameworkCore.Relational": {
             "target": "Package",
             "version": "[7.0.20, )"
           },
