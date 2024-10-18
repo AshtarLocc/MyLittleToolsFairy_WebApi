@@ -53,6 +53,8 @@
             <summary>
             User - 透過 名字 與 使用者類型 查詢
             </summary>
+            <param name="name"></param>
+            <param name="userType"></param>
             <returns></returns>
         </member>
         <member name="M:myLittleToolsFairy.WebApi.Controllers.UserController.QueryPageUsersByNameAndUserType(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32)">

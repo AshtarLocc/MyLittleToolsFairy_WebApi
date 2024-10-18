@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "eTzd46eK9GnvwW4TE7m/IO2ie8vEwKn2z4KGhFK441E=",
+  "Hash": "S6I5o6qzOlacYHKeTvwPTIucOZCIaLRA9tO/Bzzb4m8=",
   "Source": "myLittleToolsFairy.WebApi",
   "BasePath": "_content/myLittleToolsFairy.WebApi",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.CommonsS\\myLittleToolsFairy.Commons.csproj",
+      "Version": 2,
+      "Source": "myLittleToolsFairy.Commons",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [],
   "Assets": []
 }

@@ -11,11 +11,13 @@
           "LinqKit.Core": "1.2.5",
           "Microsoft.AspNetCore.OpenApi": "7.0.7",
           "Microsoft.EntityFrameworkCore": "7.0.20",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.20",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.20",
           "SqlSugarCore": "5.1.4.167",
           "Swashbuckle.AspNetCore": "6.5.0",
           "System.Data.SqlClient": "4.8.6",
           "myLittleToolsFairy.BusinessServices": "1.0.0",
+          "myLittleToolsFairy.Commons": "1.0.0",
           "myLittleToolsFairy.IBusinessServices": "1.0.0",
           "myLittleToolsFairy.WebCore": "1.0.0"
         },
@@ -1062,6 +1064,7 @@
         "dependencies": {
           "LinqKit.Core": "1.2.5",
           "Microsoft.EntityFrameworkCore": "7.0.20",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.20",
           "System.Data.SqlClient": "4.8.6",
           "myLittleToolsFairy.IBusinessServices": "1.0.0"
         },
@@ -1069,10 +1072,16 @@
           "myLittleToolsFairy.BusinessServices.dll": {}
         }
       },
+      "myLittleToolsFairy.Commons/1.0.0": {
+        "runtime": {
+          "myLittleToolsFairy.Commons.dll": {}
+        }
+      },
       "myLittleToolsFairy.DbModels/1.0.0": {
         "dependencies": {
           "LinqKit.Core": "1.2.5",
           "Microsoft.EntityFrameworkCore": "7.0.20",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.20",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.20",
           "System.Data.SqlClient": "4.8.6"
         },
@@ -1083,6 +1092,7 @@
       "myLittleToolsFairy.IBusinessServices/1.0.0": {
         "dependencies": {
           "LinqKit.Core": "1.2.5",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.20",
           "System.Data.SqlClient": "4.8.6"
         },
         "runtime": {
@@ -1093,6 +1103,7 @@
         "dependencies": {
           "LinqKit.Core": "1.2.5",
           "Microsoft.EntityFrameworkCore": "7.0.20",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.20",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.20",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1",
           "Swashbuckle.AspNetCore": "6.5.0",
@@ -1798,6 +1809,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "myLittleToolsFairy.BusinessServices/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "myLittleToolsFairy.Commons/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

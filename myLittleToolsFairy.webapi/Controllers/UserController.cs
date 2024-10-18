@@ -1,23 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using myLittleToolsFairy.DbModels;
 using myLittleToolsFairy.DbModels.Models;
 using myLittleToolsFairy.WebCore.SwaggerExtend;
 using myLittleToolsFairy.IBusinessServices;
-using myLittleToolsFairy.BusinessServices;
-using myLittleToolsFairy.WebApi.Model.DB;
+using myLittleToolsFairy.Commons.Controllers;
+using myLittleToolsFairy.Commons.Model;
 using System.Linq.Expressions;
-using LinqKit;
-using LinqKit.Core;
 using myLittleToolsFairy.IBusinessServices.Model;
-using System.Xml;
+using myLittleToolsFairy.WebApi.Model.DB;
 
 namespace myLittleToolsFairy.WebApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    [ApiExplorerSettings(IgnoreApi = false, GroupName = nameof(ApiVersions.v1))]
-    public class UserController : BaseController
+    [ApiExplorerSettings(IgnoreApi = false, GroupName = nameof(ApiVersions.v2))]
+    public class UserController : CommonController
     // 改繼承
     {
         private readonly ILogger<UserController> _logger;
@@ -37,18 +34,31 @@ namespace myLittleToolsFairy.WebApi.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet("{id}")]
-        [ProducesResponseType(typeof(UserEntity), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiDataResult<UserEntity>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiDataResult<UserEntity>), StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> GetUserById(int id)
         {
             try
             {
                 var user = await _iuserService.Find<UserEntity>(id);
 
-                return HandleResponse(user);
+                return new JsonResult(new ApiDataResult<UserEntity>()
+                {
+                    Success = true,
+                    Message = "用戶查詢(id)",
+                    Data = user,
+                    OValue = null
+                });
             }
             catch (Exception ex)
             {
-                return HandleError(ex.Message);
+                return new JsonResult(new ApiDataResult<UserEntity>()
+                {
+                    Success = false,
+                    Message = $"用戶查詢(id): {ex.Message}",
+                    Data = null,
+                    OValue = null
+                });
             }
         }
 
@@ -57,17 +67,30 @@ namespace myLittleToolsFairy.WebApi.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [ProducesResponseType(typeof(UserEntity), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiDataResult<UserEntity>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiDataResult<UserEntity>), StatusCodes.Status500InternalServerError)]
         public IActionResult GetUsers()
         {
             try
             {
-                var users = _iuserService.Set<UserEntity>();
-                return HandleResponse(users);
+                var users = _iuserService.Set<UserEntity>().ToList();
+                return new JsonResult(new ApiDataResult<List<UserEntity>>()
+                {
+                    Success = true,
+                    Message = "用戶查詢",
+                    Data = users,
+                    OValue = null
+                });
             }
             catch (Exception ex)
             {
-                return HandleError(ex.Message);
+                return new JsonResult(new ApiDataResult<UserEntity>()
+                {
+                    Success = false,
+                    Message = $"用戶查詢: {ex.Message}",
+                    Data = null,
+                    OValue = null
+                });
             }
         }
 
@@ -78,7 +101,8 @@ namespace myLittleToolsFairy.WebApi.Controllers
         /// <param name="userType"></param>
         /// <returns></returns>
         [HttpGet("search")]
-        [ProducesResponseType(typeof(UserEntity), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiDataResult<UserEntity>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiDataResult<UserEntity>), StatusCodes.Status500InternalServerError)]
         public IActionResult QueryUsersByNameAndUserType([FromQuery] string? name, [FromQuery] int? userType)
         {
             var query = _iuserService.Set<UserEntity>().AsQueryable();
@@ -96,11 +120,23 @@ namespace myLittleToolsFairy.WebApi.Controllers
             try
             {
                 var users = query.ToList();
-                return HandleResponse(users);
+                return new JsonResult(new ApiDataResult<List<UserEntity>>()
+                {
+                    Success = true,
+                    Message = "用戶查詢(姓名/使用者類型)",
+                    Data = users,
+                    OValue = null
+                });
             }
             catch (Exception ex)
             {
-                return HandleError(ex.Message);
+                return new JsonResult(new ApiDataResult<UserEntity>()
+                {
+                    Success = false,
+                    Message = $"用戶查詢(姓名/使用者類型): {ex.Message}",
+                    Data = null,
+                    OValue = null
+                });
             }
         }
 
@@ -113,7 +149,8 @@ namespace myLittleToolsFairy.WebApi.Controllers
         /// <param name="pageIndex"></param>
         /// <returns></returns>
         [HttpGet("page")]
-        [ProducesResponseType(typeof(PagingData<UserEntity>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiDataResult<PagingData<UserEntity>>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiDataResult<PagingData<UserEntity>>), StatusCodes.Status500InternalServerError)]
         public IActionResult QueryPageUsersByNameAndUserType([FromQuery] int? userType, [FromQuery] int? sex, [FromQuery] int pageSize, [FromQuery] int pageIndex)
         {
             try
@@ -125,11 +162,23 @@ namespace myLittleToolsFairy.WebApi.Controllers
 
                 Expression<Func<UserEntity, string>> orderBy = x => x.Name;
                 var result = _iuserService.QueryPage(searchCondition, pageSize, pageIndex, orderBy, true);
-                return HandleResponse(result.DataList);
+                return new JsonResult(new ApiDataResult<PagingData<UserEntity>>()
+                {
+                    Success = true,
+                    Message = "分頁查詢(使用者類型/性別)",
+                    Data = result,
+                    OValue = null
+                });
             }
             catch (Exception ex)
             {
-                return HandleError(ex.Message);
+                return new JsonResult(new ApiDataResult<PagingData<UserEntity>>()
+                {
+                    Success = false,
+                    Message = $"分頁查詢(使用者類型/性別): {ex.Message}",
+                    Data = null,
+                    OValue = null
+                });
             }
         }
     }

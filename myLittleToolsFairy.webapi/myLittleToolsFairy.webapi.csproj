@@ -20,6 +20,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\myLittleToolsFairy.BusinessServices\myLittleToolsFairy.BusinessServices.csproj" />
+    <ProjectReference Include="..\myLittleToolsFairy.CommonsS\myLittleToolsFairy.Commons.csproj" />
+    <ProjectReference Include="..\myLittleToolsFairy.Commons\myLittleToolsFairy.Commons.csproj" />
     <ProjectReference Include="..\myLittleToolsFairy.IBusinessServices\myLittleToolsFairy.IBusinessServices.csproj" />
     <ProjectReference Include="..\myLittleToolsFairy.WebCore\myLittleToolsFairy.WebCore.csproj" />
   </ItemGroup>

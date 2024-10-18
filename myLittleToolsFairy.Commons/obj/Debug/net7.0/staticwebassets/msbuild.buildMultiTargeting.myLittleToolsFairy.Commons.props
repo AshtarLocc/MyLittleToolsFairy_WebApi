@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\myLittleToolsFairy.Commons.props" />
+</Project>

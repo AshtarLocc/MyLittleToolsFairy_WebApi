@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "myLittleToolsFairy.IBusines
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{A77656BE-1C48-4029-8555-BA9650FC6E6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myLittleToolsFairy.AuthenticationApi", "myLittleToolsFairy.AuthenticationApi\myLittleToolsFairy.AuthenticationApi.csproj", "{1FEDB302-49A9-4209-8FFE-C8D3838680BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "myLittleToolsFairy.AuthenticationApi", "myLittleToolsFairy.AuthenticationApi\myLittleToolsFairy.AuthenticationApi.csproj", "{1FEDB302-49A9-4209-8FFE-C8D3838680BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "myLittleToolsFairy.Commons", "myLittleToolsFairy.Commons\myLittleToolsFairy.Commons.csproj", "{F40711EB-3812-404D-8783-DDBD7D501FBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{1FEDB302-49A9-4209-8FFE-C8D3838680BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FEDB302-49A9-4209-8FFE-C8D3838680BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FEDB302-49A9-4209-8FFE-C8D3838680BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F40711EB-3812-404D-8783-DDBD7D501FBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F40711EB-3812-404D-8783-DDBD7D501FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F40711EB-3812-404D-8783-DDBD7D501FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F40711EB-3812-404D-8783-DDBD7D501FBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -117,12 +117,12 @@ namespace myLittleToolsFairy.BusinessServices
             Context.SaveChanges();
         }
 
-        public IQueryable<T> ExcuteQuery<T>(string sql, SqlParameter[] parameters) where T : class
+        public IQueryable<T> ExecuteQuery<T>(string sql, SqlParameter[] parameters) where T : class
         {
             return this.Context.Set<T>().FromSqlRaw(sql, parameters);
         }
 
-        public void Excute<T>(string sql, SqlParameter[] parameters) where T : class
+        public void Execute<T>(string sql, SqlParameter[] parameters) where T : class
         {
             // IDbContextTransaction : Entity Framework Core 自帶，處理交易行為的接口。
             IDbContextTransaction trans = null;

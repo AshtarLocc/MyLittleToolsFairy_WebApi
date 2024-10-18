@@ -255,3 +255,8 @@ C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToo
 C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webapi\bin\Debug\net7.0\myLittleToolsFairy.IBusinessServices.pdb
 C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webapi\bin\Debug\net7.0\myLittleToolsFairy.DbModels.pdb
 C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webapi\bin\Debug\net7.0\LinqKit.Core.dll
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webapi\bin\Debug\net7.0\myLittleToolsFairy.Commons.dll
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webapi\bin\Debug\net7.0\myLittleToolsFairy.Commons.pdb
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webapi\bin\Debug\net7.0\myLittleToolsFairy.Commons.deps.json
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webapi\bin\Debug\net7.0\myLittleToolsFairy.Commons.runtimeconfig.json
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webapi\bin\Debug\net7.0\myLittleToolsFairy.Commons.exe

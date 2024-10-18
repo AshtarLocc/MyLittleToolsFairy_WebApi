@@ -1741,6 +1741,19 @@
           "bin/placeholder/myLittleToolsFairy.BusinessServices.dll": {}
         }
       },
+      "myLittleToolsFairy.Commons/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/myLittleToolsFairy.Commons.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/myLittleToolsFairy.Commons.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "myLittleToolsFairy.DbModels/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -5225,6 +5238,11 @@
       "path": "../myLittleToolsFairy.BusinessServices/myLittleToolsFairy.BusinessServices.csproj",
       "msbuildProject": "../myLittleToolsFairy.BusinessServices/myLittleToolsFairy.BusinessServices.csproj"
     },
+    "myLittleToolsFairy.Commons/1.0.0": {
+      "type": "project",
+      "path": "../myLittleToolsFairy.Commons/myLittleToolsFairy.Commons.csproj",
+      "msbuildProject": "../myLittleToolsFairy.Commons/myLittleToolsFairy.Commons.csproj"
+    },
     "myLittleToolsFairy.DbModels/1.0.0": {
       "type": "project",
       "path": "../myLittleToolsFairy.DbModels/myLittleToolsFairy.DbModels.csproj",
@@ -5252,6 +5270,7 @@
       "Swashbuckle.AspNetCore >= 6.5.0",
       "System.Data.SqlClient >= 4.8.6",
       "myLittleToolsFairy.BusinessServices >= 1.0.0",
+      "myLittleToolsFairy.Commons >= 1.0.0",
       "myLittleToolsFairy.IBusinessServices >= 1.0.0",
       "myLittleToolsFairy.WebCore >= 1.0.0"
     ]
@@ -5292,6 +5311,12 @@
           "projectReferences": {
             "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.BusinessServices\\myLittleToolsFairy.BusinessServices.csproj": {
               "projectPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.BusinessServices\\myLittleToolsFairy.BusinessServices.csproj"
+            },
+            "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.CommonsS\\myLittleToolsFairy.Commons.csproj": {
+              "projectPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.CommonsS\\myLittleToolsFairy.Commons.csproj"
+            },
+            "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.Commons\\myLittleToolsFairy.Commons.csproj": {
+              "projectPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.Commons\\myLittleToolsFairy.Commons.csproj"
             },
             "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.IBusinessServices\\myLittleToolsFairy.IBusinessServices.csproj": {
               "projectPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.IBusinessServices\\myLittleToolsFairy.IBusinessServices.csproj"
