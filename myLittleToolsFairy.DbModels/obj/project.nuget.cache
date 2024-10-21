@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "dnlDgViY5JvLoIDfEqZVPLKliAxpmTiQILcjEEa9jh3j1AzR/0ZYrZyqhxK1VRPyc+3kz3PXpuNH6723SeaSFA==",
+  "dgSpecHash": "sVw3aUAMuGN2vTnr4OzAJQDKBd4pdv3J7waZU4CnMmQMbf09xySspM7p4OuxqHt10Sm5kSMRV9N4hoviw0D8yg==",
   "success": true,
   "projectFilePath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.DbModels\\myLittleToolsFairy.DbModels.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\IT0194\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\IT0194\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\IT0194\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\IT0194\\.nuget\\packages\\linqkit.core\\1.2.5\\linqkit.core.1.2.5.nupkg.sha512",

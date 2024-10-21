@@ -8,6 +8,9 @@ using myLittleToolsFairy.Commons.Model;
 using System.Linq.Expressions;
 using myLittleToolsFairy.IBusinessServices.Model;
 using myLittleToolsFairy.WebApi.Model.DB;
+using myLittleToolsFairy.ModelDto;
+using AutoMapper;
+using SqlSugar;
 
 namespace myLittleToolsFairy.WebApi.Controllers
 {
@@ -15,17 +18,18 @@ namespace myLittleToolsFairy.WebApi.Controllers
     [Route("[controller]")]
     [ApiExplorerSettings(IgnoreApi = false, GroupName = nameof(ApiVersions.v2))]
     public class UserController : CommonController
-    // 改繼承
     {
         private readonly ILogger<UserController> _logger;
         private readonly DbContext _dbContext;
         private readonly IUserService _iuserService;
+        private readonly IMapper _IMapper;
 
-        public UserController(ILogger<UserController> logger, DbContext dbContext, IUserService iuserService)
+        public UserController(ILogger<UserController> logger, DbContext dbContext, IUserService iuserService, IMapper iMapper)
         {
             _logger = logger;
             _dbContext = dbContext;
             _iuserService = iuserService;
+            _IMapper = iMapper;
         }
 
         /// <summary>
@@ -34,25 +38,30 @@ namespace myLittleToolsFairy.WebApi.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet("{id}")]
-        [ProducesResponseType(typeof(ApiDataResult<UserEntity>), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ApiDataResult<UserEntity>), StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(typeof(ApiDataResult<UserDto>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiDataResult<UserDto>), StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> GetUserById(int id)
         {
             try
             {
+                // 此處 user 為 UserEntity 類型
                 var user = await _iuserService.Find<UserEntity>(id);
 
-                return new JsonResult(new ApiDataResult<UserEntity>()
+                // UserDto userDto = 使用 IMapper 將 UserEntity類型的 user 轉換為 UserDto 類型
+                UserDto userDto = _IMapper.Map<UserEntity, UserDto>(user);
+
+                // 改回傳的型態為 ApiDataResult<UserDto>，Data中改為 userDto
+                return new JsonResult(new ApiDataResult<UserDto>()
                 {
                     Success = true,
                     Message = "用戶查詢(id)",
-                    Data = user,
+                    Data = userDto,
                     OValue = null
                 });
             }
             catch (Exception ex)
             {
-                return new JsonResult(new ApiDataResult<UserEntity>()
+                return new JsonResult(new ApiDataResult<UserDto>()
                 {
                     Success = false,
                     Message = $"用戶查詢(id): {ex.Message}",
@@ -67,24 +76,27 @@ namespace myLittleToolsFairy.WebApi.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [ProducesResponseType(typeof(ApiDataResult<UserEntity>), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ApiDataResult<UserEntity>), StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(typeof(ApiDataResult<UserDto>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiDataResult<UserDto>), StatusCodes.Status500InternalServerError)]
         public IActionResult GetUsers()
         {
             try
             {
                 var users = _iuserService.Set<UserEntity>().ToList();
-                return new JsonResult(new ApiDataResult<List<UserEntity>>()
+
+                List<UserDto> userDtoList = _IMapper.Map<List<UserEntity>, List<UserDto>>(users);
+
+                return new JsonResult(new ApiDataResult<List<UserDto>>()
                 {
                     Success = true,
                     Message = "用戶查詢",
-                    Data = users,
+                    Data = userDtoList,
                     OValue = null
                 });
             }
             catch (Exception ex)
             {
-                return new JsonResult(new ApiDataResult<UserEntity>()
+                return new JsonResult(new ApiDataResult<UserDto>()
                 {
                     Success = false,
                     Message = $"用戶查詢: {ex.Message}",
@@ -101,8 +113,8 @@ namespace myLittleToolsFairy.WebApi.Controllers
         /// <param name="userType"></param>
         /// <returns></returns>
         [HttpGet("search")]
-        [ProducesResponseType(typeof(ApiDataResult<UserEntity>), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ApiDataResult<UserEntity>), StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(typeof(ApiDataResult<UserDto>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiDataResult<UserDto>), StatusCodes.Status500InternalServerError)]
         public IActionResult QueryUsersByNameAndUserType([FromQuery] string? name, [FromQuery] int? userType)
         {
             var query = _iuserService.Set<UserEntity>().AsQueryable();
@@ -120,17 +132,20 @@ namespace myLittleToolsFairy.WebApi.Controllers
             try
             {
                 var users = query.ToList();
-                return new JsonResult(new ApiDataResult<List<UserEntity>>()
+
+                List<UserDto> userDtoList = _IMapper.Map<List<UserEntity>, List<UserDto>>(users);
+
+                return new JsonResult(new ApiDataResult<List<UserDto>>()
                 {
                     Success = true,
                     Message = "用戶查詢(姓名/使用者類型)",
-                    Data = users,
+                    Data = userDtoList,
                     OValue = null
                 });
             }
             catch (Exception ex)
             {
-                return new JsonResult(new ApiDataResult<UserEntity>()
+                return new JsonResult(new ApiDataResult<UserDto>()
                 {
                     Success = false,
                     Message = $"用戶查詢(姓名/使用者類型): {ex.Message}",
@@ -149,8 +164,8 @@ namespace myLittleToolsFairy.WebApi.Controllers
         /// <param name="pageIndex"></param>
         /// <returns></returns>
         [HttpGet("page")]
-        [ProducesResponseType(typeof(ApiDataResult<PagingData<UserEntity>>), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ApiDataResult<PagingData<UserEntity>>), StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(typeof(ApiDataResult<PagingData<UserDto>>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiDataResult<PagingData<UserDto>>), StatusCodes.Status500InternalServerError)]
         public IActionResult QueryPageUsersByNameAndUserType([FromQuery] int? userType, [FromQuery] int? sex, [FromQuery] int pageSize, [FromQuery] int pageIndex)
         {
             try
@@ -162,17 +177,21 @@ namespace myLittleToolsFairy.WebApi.Controllers
 
                 Expression<Func<UserEntity, string>> orderBy = x => x.Name;
                 var result = _iuserService.QueryPage(searchCondition, pageSize, pageIndex, orderBy, true);
-                return new JsonResult(new ApiDataResult<PagingData<UserEntity>>()
+
+                // 必須先在 AutoMapConfig 規則中再加入一條 PagingData<>的泛型映射 : CreateMap(typeof(PagingData<>), typeof(PagingData<>));
+                PagingData<UserDto> userDto = _IMapper.Map<PagingData<UserDto>>(result);
+
+                return new JsonResult(new ApiDataResult<PagingData<UserDto>>()
                 {
                     Success = true,
                     Message = "分頁查詢(使用者類型/性別)",
-                    Data = result,
+                    Data = userDto,
                     OValue = null
                 });
             }
             catch (Exception ex)
             {
-                return new JsonResult(new ApiDataResult<PagingData<UserEntity>>()
+                return new JsonResult(new ApiDataResult<PagingData<UserDto>>()
                 {
                     Success = false,
                     Message = $"分頁查詢(使用者類型/性別): {ex.Message}",

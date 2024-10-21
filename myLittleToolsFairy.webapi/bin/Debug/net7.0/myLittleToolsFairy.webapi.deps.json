@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "myLittleToolsFairy.WebApi/1.0.0": {
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "LinqKit.Core": "1.2.5",
           "Microsoft.AspNetCore.OpenApi": "7.0.7",
           "Microsoft.EntityFrameworkCore": "7.0.20",
@@ -19,10 +20,22 @@
           "myLittleToolsFairy.BusinessServices": "1.0.0",
           "myLittleToolsFairy.Commons": "1.0.0",
           "myLittleToolsFairy.IBusinessServices": "1.0.0",
+          "myLittleToolsFairy.ModelDto": "1.0.0",
           "myLittleToolsFairy.WebCore": "1.0.0"
         },
         "runtime": {
           "myLittleToolsFairy.WebApi.dll": {}
+        }
+      },
+      "AutoMapper/13.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Options": "7.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.0"
+          }
         }
       },
       "Azure.Core/1.35.0": {
@@ -1062,6 +1075,7 @@
       },
       "myLittleToolsFairy.BusinessServices/1.0.0": {
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "LinqKit.Core": "1.2.5",
           "Microsoft.EntityFrameworkCore": "7.0.20",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.20",
@@ -1073,12 +1087,16 @@
         }
       },
       "myLittleToolsFairy.Commons/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "13.0.1"
+        },
         "runtime": {
           "myLittleToolsFairy.Commons.dll": {}
         }
       },
       "myLittleToolsFairy.DbModels/1.0.0": {
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "LinqKit.Core": "1.2.5",
           "Microsoft.EntityFrameworkCore": "7.0.20",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.20",
@@ -1091,6 +1109,7 @@
       },
       "myLittleToolsFairy.IBusinessServices/1.0.0": {
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "LinqKit.Core": "1.2.5",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.20",
           "System.Data.SqlClient": "4.8.6"
@@ -1099,8 +1118,17 @@
           "myLittleToolsFairy.IBusinessServices.dll": {}
         }
       },
+      "myLittleToolsFairy.ModelDto/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "13.0.1"
+        },
+        "runtime": {
+          "myLittleToolsFairy.ModelDto.dll": {}
+        }
+      },
       "myLittleToolsFairy.WebCore/1.0.0": {
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "LinqKit.Core": "1.2.5",
           "Microsoft.EntityFrameworkCore": "7.0.20",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.20",
@@ -1108,7 +1136,9 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1",
           "Swashbuckle.AspNetCore": "6.5.0",
           "System.Data.SqlClient": "4.8.6",
-          "myLittleToolsFairy.DbModels": "1.0.0"
+          "myLittleToolsFairy.DbModels": "1.0.0",
+          "myLittleToolsFairy.IBusinessServices": "1.0.0",
+          "myLittleToolsFairy.ModelDto": "1.0.0"
         },
         "runtime": {
           "myLittleToolsFairy.WebCore.dll": {}
@@ -1121,6 +1151,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "path": "automapper/13.0.1",
+      "hashPath": "automapper.13.0.1.nupkg.sha512"
     },
     "Azure.Core/1.35.0": {
       "type": "package",
@@ -1824,6 +1861,11 @@
       "sha512": ""
     },
     "myLittleToolsFairy.IBusinessServices/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "myLittleToolsFairy.ModelDto/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

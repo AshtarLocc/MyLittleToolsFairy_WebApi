@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "10dviH7xYBKWnzHGTFTBl43MJzQ0KO1jBfOFAxr0pBzGjdYSdY31ZiplOZog5UVUmIUUV9v1UqlKc3X01pA1kg==",
+  "dgSpecHash": "Qp82FHHOqxwDBqpSXX1wgd7mulC4X/L6rRCaoQdetC/s21XYH9mxnyQmruZY3mq7d8soD+nl1HwBfHsQ/xqzuA==",
   "success": true,
   "projectFilePath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.Commons\\myLittleToolsFairy.Commons.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\IT0194\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\IT0194\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\IT0194\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\IT0194\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\IT0194\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

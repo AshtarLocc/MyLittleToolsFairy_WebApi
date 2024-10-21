@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "PGJjNRaKYiZfjFNe+NYTMCompwKUHmYxA5BUzDfHj6YhcPe4nN1l5Von5hyEOZKXr8v3r+H8n8fBMo/Zoxs0hA==",
+  "dgSpecHash": "d2YtGjxh2hP5kMBxP+3hTPIKKsVOHvhOuhw8MSbtUxxlGiwzwgOiLCHpvzMXf2u/faUvMDIaxAPFzkl7opFeqA==",
   "success": true,
   "projectFilePath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.AuthenticationApi\\myLittleToolsFairy.AuthenticationApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\IT0194\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\IT0194\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.7\\microsoft.aspnetcore.openapi.7.0.7.nupkg.sha512",
     "C:\\Users\\IT0194\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.20\\microsoft.entityframeworkcore.7.0.20.nupkg.sha512",
     "C:\\Users\\IT0194\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.20\\microsoft.entityframeworkcore.abstractions.7.0.20.nupkg.sha512",

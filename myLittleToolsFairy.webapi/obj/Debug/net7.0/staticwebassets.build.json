@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "S6I5o6qzOlacYHKeTvwPTIucOZCIaLRA9tO/Bzzb4m8=",
+  "Hash": "wiPPG8fzExCbm1cx63MNwASVRfJubdyNeAQ2Hq0qlYw=",
   "Source": "myLittleToolsFairy.WebApi",
   "BasePath": "_content/myLittleToolsFairy.WebApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.CommonsS\\myLittleToolsFairy.Commons.csproj",
+      "Identity": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.Commons\\myLittleToolsFairy.Commons.csproj",
       "Version": 2,
       "Source": "myLittleToolsFairy.Commons",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",

@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net7.0": {
+      "AutoMapper/13.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Azure.Core/1.35.0": {
         "type": "package",
         "dependencies": {
@@ -1180,6 +1196,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "LinqKit.Core": "1.2.5",
           "Microsoft.EntityFrameworkCore": "7.0.20",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.20",
@@ -1192,10 +1209,54 @@
         "runtime": {
           "bin/placeholder/myLittleToolsFairy.DbModels.dll": {}
         }
+      },
+      "myLittleToolsFairy.IBusinessServices/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "AutoMapper": "13.0.1",
+          "LinqKit.Core": "1.2.5",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.20",
+          "System.Data.SqlClient": "4.8.6"
+        },
+        "compile": {
+          "bin/placeholder/myLittleToolsFairy.IBusinessServices.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/myLittleToolsFairy.IBusinessServices.dll": {}
+        }
+      },
+      "myLittleToolsFairy.ModelDto/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "AutoMapper": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/myLittleToolsFairy.ModelDto.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/myLittleToolsFairy.ModelDto.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "AutoMapper/13.0.1": {
+      "sha512": "/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "type": "package",
+      "path": "automapper/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.13.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net6.0/AutoMapper.dll",
+        "lib/net6.0/AutoMapper.xml"
+      ]
+    },
     "Azure.Core/1.35.0": {
       "sha512": "hENcx03Jyuqv05F4RBEPbxz29UrM3Nbhnr6Wl6NQpoU9BCIbL3XLentrxDCTrH54NLS11Exxi/o8MYgT/cnKFA==",
       "type": "package",
@@ -3471,10 +3532,21 @@
       "type": "project",
       "path": "../myLittleToolsFairy.DbModels/myLittleToolsFairy.DbModels.csproj",
       "msbuildProject": "../myLittleToolsFairy.DbModels/myLittleToolsFairy.DbModels.csproj"
+    },
+    "myLittleToolsFairy.IBusinessServices/1.0.0": {
+      "type": "project",
+      "path": "../myLittleToolsFairy.IBusinessServices/myLittleToolsFairy.IBusinessServices.csproj",
+      "msbuildProject": "../myLittleToolsFairy.IBusinessServices/myLittleToolsFairy.IBusinessServices.csproj"
+    },
+    "myLittleToolsFairy.ModelDto/1.0.0": {
+      "type": "project",
+      "path": "../myLittleToolsFairy.ModelDto/myLittleToolsFairy.ModelDto.csproj",
+      "msbuildProject": "../myLittleToolsFairy.ModelDto/myLittleToolsFairy.ModelDto.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "AutoMapper >= 13.0.1",
       "LinqKit.Core >= 1.2.5",
       "Microsoft.EntityFrameworkCore >= 7.0.20",
       "Microsoft.EntityFrameworkCore.Relational >= 7.0.20",
@@ -3482,7 +3554,9 @@
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 8.0.1",
       "Swashbuckle.AspNetCore >= 6.5.0",
       "System.Data.SqlClient >= 4.8.6",
-      "myLittleToolsFairy.DbModels >= 1.0.0"
+      "myLittleToolsFairy.DbModels >= 1.0.0",
+      "myLittleToolsFairy.IBusinessServices >= 1.0.0",
+      "myLittleToolsFairy.ModelDto >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3520,6 +3594,12 @@
           "projectReferences": {
             "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.DbModels\\myLittleToolsFairy.DbModels.csproj": {
               "projectPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.DbModels\\myLittleToolsFairy.DbModels.csproj"
+            },
+            "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.IBusinessServices\\myLittleToolsFairy.IBusinessServices.csproj": {
+              "projectPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.IBusinessServices\\myLittleToolsFairy.IBusinessServices.csproj"
+            },
+            "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.ModelDto\\myLittleToolsFairy.ModelDto.csproj": {
+              "projectPath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.ModelDto\\myLittleToolsFairy.ModelDto.csproj"
             }
           }
         }
@@ -3534,6 +3614,10 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          },
           "LinqKit.Core": {
             "target": "Package",
             "version": "[1.2.5, )"

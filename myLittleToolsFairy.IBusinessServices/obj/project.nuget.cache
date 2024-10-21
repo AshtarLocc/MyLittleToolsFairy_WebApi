@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2EdTRV+/hPrG316TdrJq/uYD8JiaRytbi+SvKTPT57jnJig4EJwUQ3/Bmq7p1qiZb1MxUxMAuxdTeYFKXTX/Zg==",
+  "dgSpecHash": "0xEHiO0gnCTciFoI42YTivvvUxA5oWCYJoPRsJXTftdnlyQ9ry+Jp+puoGgUw6QVVBqdhiZdNztwacNxP78spQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\IT0194\\Desktop\\MyLittleToolsFairy\\myLittleToolsFairy.webapi\\myLittleToolsFairy.IBusinessServices\\myLittleToolsFairy.IBusinessServices.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\IT0194\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\IT0194\\.nuget\\packages\\linqkit.core\\1.2.5\\linqkit.core.1.2.5.nupkg.sha512",
     "C:\\Users\\IT0194\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.20\\microsoft.entityframeworkcore.7.0.20.nupkg.sha512",
     "C:\\Users\\IT0194\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.20\\microsoft.entityframeworkcore.abstractions.7.0.20.nupkg.sha512",

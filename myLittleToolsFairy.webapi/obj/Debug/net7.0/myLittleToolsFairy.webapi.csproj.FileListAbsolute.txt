@@ -260,3 +260,6 @@ C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToo
 C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webapi\bin\Debug\net7.0\myLittleToolsFairy.Commons.deps.json
 C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webapi\bin\Debug\net7.0\myLittleToolsFairy.Commons.runtimeconfig.json
 C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webapi\bin\Debug\net7.0\myLittleToolsFairy.Commons.exe
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webapi\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webapi\bin\Debug\net7.0\myLittleToolsFairy.ModelDto.dll
+C:\Users\IT0194\Desktop\MyLittleToolsFairy\myLittleToolsFairy.webapi\myLittleToolsFairy.webapi\bin\Debug\net7.0\myLittleToolsFairy.ModelDto.pdb

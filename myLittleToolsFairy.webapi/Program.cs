@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using myLittleToolsFairy.DbModels;
 using myLittleToolsFairy.IBusinessServices;
 using myLittleToolsFairy.BusinessServices;
+using myLittleToolsFairy.WebCore.AutoMapExtend;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -50,6 +51,12 @@ builder.Services.AddDbContext<DbContext, myLittleToolsFairyDbContext>(buildOptio
 builder.Services.AddTransient<IUserService, UserService>();
 
 #endregion IOC
+
+#region AutoMapper µù¥U
+
+builder.Services.AddAutoMapper(typeof(AutoMapConfig));
+
+#endregion AutoMapper µù¥U
 
 builder.Services.AddCorsExt();
 
