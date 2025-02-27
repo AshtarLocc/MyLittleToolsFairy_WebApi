@@ -163,6 +163,10 @@ namespace myLittleToolsFairy.WebApi.Controllers
         /// <param name="pageSize"></param>
         /// <param name="pageIndex"></param>
         /// <returns></returns>
+        //[HttpGet("{pageIndex}/{pageSize}")]
+        //[HttpGet("type/{userType}/{pageIndex}/{pageSize}")]
+        //[HttpGet("sex/{sex}/{pageIndex}/{pageSize}")]
+        //[HttpGet("type/sex/{userType}/{sex}/{pageIndex}/{pageSize}")]
         [HttpGet("page")]
         [ProducesResponseType(typeof(ApiDataResult<PagingData<UserDto>>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ApiDataResult<PagingData<UserDto>>), StatusCodes.Status500InternalServerError)]
@@ -176,6 +180,7 @@ namespace myLittleToolsFairy.WebApi.Controllers
             (!sex.HasValue || x.Sex == sex);
 
                 Expression<Func<UserEntity, string>> orderBy = x => x.Name;
+
                 var result = _iuserService.QueryPage(searchCondition, pageSize, pageIndex, orderBy, true);
 
                 // 必須先在 AutoMapConfig 規則中再加入一條 PagingData<>的泛型映射 : CreateMap(typeof(PagingData<>), typeof(PagingData<>));
